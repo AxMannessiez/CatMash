@@ -21,11 +21,11 @@
     	<div id="main-div">
     		
 			<div class="first cat">
-				<img src="http://24.media.tumblr.com/tumblr_m82woaL5AD1rro1o5o1_1280.jpg" width="100px"/>
+				<?php echo('<img src="'.$first_cat_url.'" />');?>
 			</div>
 
 			<div class="second cat">
-				<img src="http://25.media.tumblr.com/tumblr_m4pwa9EXE41r6jd7fo1_500.jpg" width="100px"/>
+				<?php echo('<img src="'.$second_cat_url.'" />');?>
 			</div>
 
     	</div>

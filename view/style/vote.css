@@ -50,3 +50,7 @@ header a h1 {
 .cat:hover {
 	background-color: #DEE5F4;
 }
+
+.cat img{
+	height: 20vh; 
+}
