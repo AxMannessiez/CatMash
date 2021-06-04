@@ -51,7 +51,8 @@ header a h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
 }
 
 #cats-div .cat { 
@@ -70,6 +71,48 @@ header a h1 {
 	margin: 1vh 0;
 	text-align: center;
 }
+
+/* ===== Paging ===== */
+#pages-nav {
+    padding: 0.25rem; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+#pages-nav a {
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: white;
+    text-decoration: None;
+    color: black;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    margin: 0 0.25rem;
+}
+
+#pages-nav a.active {
+    border: 1px solid #233869;
+    background-color: #233869;
+    color: white;
+} 
+
+#pages-nav a:hover:not(.active) {
+    border: 1px solid #DEE5F4;
+    background-color: #DEE5F4;
+} 
+
+#pages-nav a.desac {
+    color: #D1D1D1;
+}
+
+#pages-nav a.desac:hover {
+	border: 1px solid white;
+    background-color: white;
+}
+
+/* ===== Paging ===== */
 
 footer {
 	position: fixed;

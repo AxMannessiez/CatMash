@@ -19,7 +19,9 @@
     	</header>
 
     	<div id="main-div">
+
             <h2>Classement</h2>
+
             <div id="cats-div">
                 <?php
                 for ($i=0; $i < count($top); $i++) { 
@@ -31,6 +33,14 @@
                 }
                 ?>
             </div>
+
+            <?php
+                if ($max_page > 1) {
+                    echo ('<div id="pages-nav">');
+                        DiplayNavBar ('ranking.php', $page, $max_page);
+                    echo('</div>');
+                }
+            ?>
 
     	</div>
 
