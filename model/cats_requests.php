@@ -36,3 +36,14 @@ function GetCatFromId(PDO $db, int $id): array {
 	$query->execute(array($id));
 	return $query->fetch();
 }
+
+/**
+ * Get the total number of votes
+ * @param PDO $db
+ * @return int
+ */
+function GetVotesNumber(PDO $db): int {
+	$query = $db->prepare("SELECT SUM(votes) as number FROM Cats");
+	$query->execute();
+	return $query->fetch()["number"];
+}

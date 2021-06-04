@@ -14,4 +14,6 @@ do {
 $first_cat_url = GetCatFromId($db, $first_cat_id)["url"];
 $second_cat_url = GetCatFromId($db, $second_cat_id)["url"];
 
+$number_of_votes = GetVotesNumber($db);
+
 include 'view/vote.php';

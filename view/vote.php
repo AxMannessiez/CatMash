@@ -19,7 +19,6 @@
     	</header>
 
     	<div id="main-div">
-    		
 			<div class="first cat">
 				<?php echo('<img src="'.$first_cat_url.'" />');?>
 			</div>
@@ -27,10 +26,14 @@
 			<div class="second cat">
 				<?php echo('<img src="'.$second_cat_url.'" />');?>
 			</div>
-
     	</div>
 
-
+    	<footer>
+    		<a href="index.php" id="bottom-tab">
+    			<h3>Voir les plus beaux chats</h3>
+    			<?php echo('<p>'.$number_of_votes.' votes.</p>');?>
+    		</a>
+    	</footer>
 
     </body>
 
