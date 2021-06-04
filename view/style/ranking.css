@@ -1,0 +1,119 @@
+header {
+    width: 100%;
+}
+
+header a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+#CatMash_logo {
+  animation: rotation 8s infinite linear;
+  width : 5rem;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+header a h1 {
+	font-size: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	color: #233869;
+	font-weight: 700;
+	margin: 0;
+}
+
+#main-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10vh;
+}
+
+#main-div h2{
+	font-size: 2rem;
+	color: #233869;
+}
+
+#cats-div {
+	max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2vh;
+}
+
+#cats-div .cat { 
+	width: 20vh;
+	margin: 1vh;
+}
+
+#cats-div img {
+	width: 20vh; 
+	height: 20vh; 
+	object-fit: cover;
+  	border-radius: 50%;
+}
+
+#cats-div p {
+	margin: 1vh 0;
+	text-align: center;
+}
+
+footer {
+	position: fixed;
+	bottom: -4.5vh;
+    width: 100%;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	-webkit-transition: bottom 0.5s ease-out;
+  	-moz-transition: bottom 0.5s ease-out;
+  	-ms-transition: bottom 0.5s ease-out;
+  	-o-transition: bottom 0.5s ease-out;
+	transition: bottom 0.5s ease-out;
+}
+
+footer #bottom-tab {
+	height: 5.5vh;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	text-decoration: none;
+	color: #233869;
+	background-color: white;
+	border-radius: 1rem 1rem 0 0;
+	box-shadow: 0 0 0.5rem 0 #DEE5F4;
+}
+
+footer:hover{
+	bottom: 0vh;
+}
+
+
+footer #bottom-tab h3 {
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0 3rem;
+}
+
+footer #bottom-tab p {
+	margin: 0.5rem;
+	text-align: center;
+	font-size: 0.8rem; 
+}

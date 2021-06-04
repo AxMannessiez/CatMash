@@ -75,3 +75,17 @@ function UpdateCatRating(PDO $db, int $id, float $rating) {
 	$updateVoteNumber = $db->prepare('UPDATE Cats SET votes = votes + 1 WHERE id=?');
 	$updateVoteNumber->execute(array($id));
 }
+
+/**
+ * Get a given page from the cats ranking
+ * @param PDO $db
+ * @param int $page
+ * @return array
+ */
+function GetCatsRanking(PDO $db, int $page) {
+	$offset = $page * 15 - 15;
+	$query = $db->prepare('SELECT * FROM Cats ORDER BY rating DESC LIMIT 15 OFFSET :offset');		// Order by the rating descending : the higher rating the better
+	$query->bindValue(':offset', (int) $offset, PDO::PARAM_INT);
+	$query->execute();
+	return $query->fetchAll();
+}
