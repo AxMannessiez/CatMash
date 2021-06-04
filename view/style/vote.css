@@ -52,5 +52,8 @@ header a h1 {
 }
 
 .cat img{
-	height: 20vh; 
+	width: 30vh; 
+	height: 30vh; 
+	object-fit: cover;
+  	border-radius: 50%;
 }
