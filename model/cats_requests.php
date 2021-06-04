@@ -47,3 +47,31 @@ function GetVotesNumber(PDO $db): int {
 	$query->execute();
 	return $query->fetch()["number"];
 }
+
+/**
+ * Get the rating of a cat
+ * @param PDO $db
+ * @param int $id
+ * @return float
+ */
+function GetRatingFromCatId(PDO $db, int $id): float {
+	$query = $db->prepare("SELECT rating FROM Cats WHERE id = ?");
+	$query->execute(array($id));
+	return $query->fetch()['rating'];
+}
+
+
+/**
+ * Update the rating of a cat
+ * @param PDO $db
+ * @param int $id
+ * @param float $rating
+ */
+function UpdateCatRating(PDO $db, int $id, float $rating) {
+	// Update the rating with the new one
+	$updateRating = $db->prepare('UPDATE Cats SET rating=? WHERE id=?');
+	$updateRating->execute(array($rating, $id));
+	// Update the number of wotes, incrementing it
+	$updateVoteNumber = $db->prepare('UPDATE Cats SET votes = votes + 1 WHERE id=?');
+	$updateVoteNumber->execute(array($id));
+}

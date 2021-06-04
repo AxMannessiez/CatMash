@@ -19,13 +19,23 @@
     	</header>
 
     	<div id="main-div">
-			<div class="first cat">
-				<?php echo('<img src="'.$first_cat_url.'" />');?>
-			</div>
+    		<form action="index.php" method="post" id="cats_forms">
+				<div class="first cat">
+					<label>
+						<input id="first_cat_button" type="radio" name="chosen_cat" value=1>
+						<?php echo('<img src="'.$first_cat_url.'" />');?>
+					</label>
+					<?php echo('<input type="hidden" name="first_cat_id" value='.$first_cat_id.'>'); ?>
+				</div>
 
-			<div class="second cat">
-				<?php echo('<img src="'.$second_cat_url.'" />');?>
-			</div>
+				<div class="second cat">
+					<label>
+						<input id="second_cat_button" type="radio" name="chosen_cat" value=2>
+						<?php echo('<img src="'.$second_cat_url.'" />');?>
+					</label>
+					<?php echo('<input type="hidden" name="second_cat_id" value='.$second_cat_id.'>'); ?>
+				</div>
+			</form>
     	</div>
 
     	<footer>
@@ -34,6 +44,19 @@
     			<?php echo('<p>'.$number_of_votes.' votes.</p>');?>
     		</a>
     	</footer>
+
+    	<script>
+    		var form = document.getElementById("cats_forms");
+    		var first_cat_button = document.getElementById("first_cat_button");
+    		var second_cat_button = document.getElementById("second_cat_button");
+
+    		first_cat_button.onclick = function() {
+    			form.submit();
+    		}
+    		second_cat_button.onclick = function() {
+    			form.submit();
+    		}
+    	</script>
 
     </body>
 

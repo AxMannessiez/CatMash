@@ -39,6 +39,10 @@ header a h1 {
 	display: flex;
 }
 
+#main-div form {
+	display: contents;
+}
+
 .cat {
 	width: 50%;
 	height: 100vh;
@@ -56,6 +60,14 @@ header a h1 {
 	height: 30vh; 
 	object-fit: cover;
   	border-radius: 50%;
+  	cursor: pointer;
+}
+
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 footer {
