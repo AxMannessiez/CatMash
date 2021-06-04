@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Remove .php
+RewriteRule ^([a-zA-Z]+)$ $1.php
+
+# Paging for the ranking page
+RewriteRule ^ranking-p([0-9]+)$ ranking?page=$1

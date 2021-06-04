@@ -39,7 +39,7 @@
     	</div>
 
     	<footer>
-    		<a href="ranking.php" id="bottom-tab">
+    		<a href="ranking" id="bottom-tab">
     			<h3>Voir les plus beaux chats</h3>
     			<?php echo('<p>'.$number_of_votes.' votes.</p>');?>
     		</a>

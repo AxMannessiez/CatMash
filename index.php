@@ -33,7 +33,7 @@ if (isset($_POST['chosen_cat'],$_POST['first_cat_id'],$_POST['second_cat_id'])){
 	UpdateCatRating($db, $winner_id, $updated_winner_rating);
 	UpdateCatRating($db, $loser_id, $updated_loser_rating);
 
-	header('Location: index.php');
+	header('Location: index');
 }
 // If we come to the page to vote
 else {

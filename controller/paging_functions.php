@@ -63,7 +63,7 @@ function DiplayNavBar (string $page_link, int $actual_page, int $max_page) {
 		echo '<a class="desac">&#60; Précédent</a>';
 	}
 	else {
-		echo '<a href="'.$page_link.'?page='.($actual_page-1).'">&#60; Précédent</a>';
+		echo '<a href="'.$page_link.'-p'.($actual_page-1).'">&#60; Précédent</a>';
 	}
 	
 	foreach ($pages_list as $page) {
@@ -71,7 +71,7 @@ function DiplayNavBar (string $page_link, int $actual_page, int $max_page) {
 			echo '<a class="active">'.$page.'</a>';
 		}
 		else {
-			echo '<a href="'.$page_link.'?page='.($page).'">'.$page.'</a>';
+			echo '<a href="'.$page_link.'-p'.($page).'">'.$page.'</a>';
 		}   
 	}
 
@@ -79,7 +79,7 @@ function DiplayNavBar (string $page_link, int $actual_page, int $max_page) {
 		echo '<a class="desac">Suivant &#62;</a>';
 	}
 	else {
-		echo '<a href="'.$page_link.'?page='.($actual_page+1).'">Suivant &#62;</a>';
+		echo '<a href="'.$page_link.'-p'.($actual_page+1).'">Suivant &#62;</a>';
 	}
 	
 }

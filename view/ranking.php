@@ -37,7 +37,7 @@
             <?php
                 if ($max_page > 1) {
                     echo ('<div id="pages-nav">');
-                        DiplayNavBar ('ranking.php', $page, $max_page);
+                        DiplayNavBar ('ranking', $page, $max_page);
                     echo('</div>');
                 }
             ?>
@@ -45,7 +45,7 @@
     	</div>
 
     	<footer>
-    		<a href="index.php" id="bottom-tab">
+    		<a href="index" id="bottom-tab">
     			<h3>Voter pour le plus beau chat</h3>
     			<?php echo('<p>Il y a '.$cat_number.' chats à départager.</p>');?>
     		</a>
