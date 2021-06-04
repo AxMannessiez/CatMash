@@ -1,0 +1,52 @@
+header {
+	position: absolute;
+    width: 100%;
+	z-index: 1;
+}
+
+header a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+#CatMash_logo {
+  animation: rotation 8s infinite linear;
+  width : 10rem;
+  margin: 1rem;
+  margin-bottom: 0.5rem;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+header a h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #233869;
+	font-weight: 700;
+	margin: 0;
+}
+
+#main-div{
+	display: flex;
+}
+
+.cat {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+.cat:hover {
+	background-color: #DEE5F4;
+}
