@@ -35,6 +35,13 @@ header a h1 {
 	margin: 0;
 }
 
+header h2{
+	font-size: 1rem;
+	text-align: center;
+	color: #233869;
+	margin-top: 0.2rem;
+}
+
 #main-div{
 	display: flex;
 	flex-direction: column;

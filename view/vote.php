@@ -21,6 +21,7 @@
     			<img src="view/img/CatMash.svg" alt="CatMash logo" id="CatMash_logo"/>
     			<h1>Cat Mash</h1>
     		</a>
+            <h2>Quel est le chat le plus mignon ?</h2>
     	</header>
 
     	<div id="main-div">
