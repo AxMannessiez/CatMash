@@ -160,14 +160,6 @@ footer #bottom-tab p {
 
 	footer #bottom-tab {
 		border-radius: 1rem 1rem 0 0;
-	}
-	
-
-}
-
-@media (hover: hover) {
-    
-	footer #bottom-tab {
 		-webkit-transition: height 0.5s ease-out;
 	  	-moz-transition: height 0.5s ease-out;
 	  	-ms-transition: height 0.5s ease-out;
