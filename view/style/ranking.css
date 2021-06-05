@@ -9,10 +9,9 @@ header a {
 	align-items: center;
 	text-decoration: none;
 }
-
 #CatMash_logo {
   animation: rotation 8s infinite linear;
-  width : 5rem;
+  width : 20vw;
   margin: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -26,10 +25,10 @@ header a {
 }
 
 header a h1 {
-	font-size: 1rem;
 	text-align: center;
 	text-transform: uppercase;
 	color: #233869;
+	font-size: 4vw;
 	font-weight: 700;
 	margin: 0;
 }
@@ -38,7 +37,7 @@ header a h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 10vh;
+	margin-bottom: 1vh;
 }
 
 #main-div h2{
@@ -47,27 +46,28 @@ header a h1 {
 }
 
 #cats-div {
-	max-width: 70%;
+	max-width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 2vh;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 }
 
 #cats-div .cat { 
-	width: 20vh;
-	margin: 1vh;
+	width: 25vw;
+	margin: 1vw;
 }
 
 #cats-div img {
-	width: 20vh; 
-	height: 20vh; 
+	width: 25vw; 
+	height: 25vw; 
 	object-fit: cover;
   	border-radius: 50%;
 }
 
 #cats-div p {
+	font-size: 4vh;
 	margin: 1vh 0;
 	text-align: center;
 }
@@ -77,7 +77,7 @@ header a h1 {
     padding: 0.25rem; 
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 #pages-nav a {
@@ -92,19 +92,20 @@ header a h1 {
     margin: 0 0.25rem;
 }
 
-#pages-nav a.active {
+#pages-nav a:not(.desac) {
     border: 1px solid #233869;
-    background-color: #233869;
     color: white;
-} 
-
-#pages-nav a:hover:not(.active) {
-    border: 1px solid #DEE5F4;
-    background-color: #DEE5F4;
-} 
+    background-color: #233869;
+}
 
 #pages-nav a.desac {
     color: #D1D1D1;
+}
+
+#pages-nav a.active {
+	border: 1px solid white;
+    background-color: white;
+    color: black;
 }
 
 #pages-nav a.desac:hover {
@@ -112,23 +113,19 @@ header a h1 {
     background-color: white;
 }
 
+#pages-nav .number:not(.active) {
+	display: none;
+}
+
 /* ===== Paging ===== */
 
 footer {
-	position: fixed;
-	bottom: -4.5vh;
     width: 100%;
-	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	-webkit-transition: bottom 0.5s ease-out;
-  	-moz-transition: bottom 0.5s ease-out;
-  	-ms-transition: bottom 0.5s ease-out;
-  	-o-transition: bottom 0.5s ease-out;
-	transition: bottom 0.5s ease-out;
+	margin-bottom: 4vh;
 }
 
 footer #bottom-tab {
@@ -140,14 +137,9 @@ footer #bottom-tab {
 	text-decoration: none;
 	color: #233869;
 	background-color: white;
-	border-radius: 1rem 1rem 0 0;
+	border-radius: 1rem ;
 	box-shadow: 0 0 0.5rem 0 #DEE5F4;
 }
-
-footer:hover{
-	bottom: 0vh;
-}
-
 
 footer #bottom-tab h3 {
 	font-size: 1rem;
@@ -159,4 +151,107 @@ footer #bottom-tab p {
 	margin: 0.5rem;
 	text-align: center;
 	font-size: 0.8rem; 
+}
+
+@media screen and (min-width: 768px) {
+
+	#CatMash_logo {
+	  animation: rotation 8s infinite linear;
+	  width : 5rem;
+	  margin: 1rem;
+	  margin-bottom: 0.5rem;
+	}
+
+	header a h1 {
+		font-size: 1rem;
+	}
+
+	#cats-div {
+	    margin-bottom: 4vh;
+	}
+
+	#cats-div .cat { 
+		width: 20vh;
+		margin: 1vh;
+	}
+
+	#cats-div img {
+		width: 20vh; 
+		height: 20vh; 
+		object-fit: cover;
+	  	border-radius: 50%;
+	}
+
+	#cats-div p {
+		font-size: 1rem;
+	}
+
+
+	/* ===== Paging ===== */
+
+	#pages-nav {
+	    padding: 0.25rem; 
+	    margin-bottom: 5rem;
+	}
+
+	#pages-nav a {
+	    font-size: 1rem;
+	    padding: 0.2rem 0.5rem;
+	    margin: 0 0.25rem;
+	    color: black;
+	}
+
+	#pages-nav a:not(.desac) {
+	    border: 1px solid white;
+	    color: black;
+	    background-color: white;
+	}
+
+	#pages-nav a.active {
+	    border: 1px solid #233869;
+	    background-color: #233869;
+	    color: white;
+	} 
+
+	#pages-nav a:hover:not(.active) {
+	    border: 1px solid #DEE5F4;
+	    background-color: #DEE5F4;
+	} 
+
+	#pages-nav .number:not(.active) {
+		display: flex;
+	}
+
+	/* ===== Paging ===== */
+
+
+	footer {
+		position: fixed;
+		bottom: -4.5vh;
+		z-index: 1;
+		margin-bottom: 0;
+
+		-webkit-transition: bottom 0.5s ease-out;
+	  	-moz-transition: bottom 0.5s ease-out;
+	  	-ms-transition: bottom 0.5s ease-out;
+	  	-o-transition: bottom 0.5s ease-out;
+		transition: bottom 0.5s ease-out;
+	}
+
+	footer:hover {
+		bottom: 0vh;
+	}
+
+	footer #bottom-tab {
+		border-radius: 1rem 1rem 0 0;
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+
+	#cats-div {
+		max-width: 70%;
+	}
+
 }

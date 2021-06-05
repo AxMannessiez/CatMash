@@ -68,10 +68,10 @@ function DiplayNavBar (string $page_link, int $actual_page, int $max_page) {
 	
 	foreach ($pages_list as $page) {
 		if ($page == $actual_page) {
-			echo '<a class="active">'.$page.'</a>';
+			echo '<a class="active number">'.$page.'</a>';
 		}
 		else {
-			echo '<a href="'.$page_link.'-p'.($page).'">'.$page.'</a>';
+			echo '<a class="number" href="'.$page_link.'-p'.($page).'">'.$page.'</a>';
 		}   
 	}
 

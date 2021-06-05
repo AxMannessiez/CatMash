@@ -5,6 +5,7 @@
     <head>
         <title>CatMash - Ranking</title>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="view/style/common.css" />
         <link rel="stylesheet" href="view/style/ranking.css" />
         <link rel="apple-touch-icon" sizes="180x180" href="view/img/favicon/apple-touch-icon.png">
