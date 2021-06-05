@@ -12,7 +12,7 @@
     <body>
 
     	<header>
-    		<a href="index.php">
+    		<a href="/">
     			<img src="view/img/CatMash.svg" alt="CatMash logo" id="CatMash_logo"/>
     			<h1>Cat Mash</h1>
     		</a>
@@ -45,7 +45,7 @@
     	</div>
 
     	<footer>
-    		<a href="index" id="bottom-tab">
+    		<a href="/" id="bottom-tab">
     			<h3>Voter pour le plus beau chat</h3>
     			<?php echo('<p>Il y a '.$cat_number.' chats à départager.</p>');?>
     		</a>

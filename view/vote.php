@@ -5,6 +5,7 @@
     <head>
         <title>CatMash - Vote</title>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="view/style/common.css" />
         <link rel="stylesheet" href="view/style/vote.css" />
     </head>
@@ -12,7 +13,7 @@
     <body>
 
     	<header>
-    		<a href="index.php">
+    		<a href="/">
     			<img src="view/img/CatMash.svg" alt="CatMash logo" id="CatMash_logo"/>
     			<h1>Cat Mash</h1>
     		</a>
